@@ -30,3 +30,9 @@ p {
   margin: 0;
   padding: 0;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .your-background-class {
+    background-attachment: scroll !important;
+  }
+}
