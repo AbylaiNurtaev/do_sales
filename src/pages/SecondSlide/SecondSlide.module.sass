@@ -1,0 +1,97 @@
+@font-face
+    font-family: "Copperplate"
+    src: url("../../fonts/copperplate_light.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: "ElMessiri"
+    src: url("../../fonts/ElMessiri.ttf") format("opentype")
+    font-weight: normal
+    font-style: normal
+
+.container
+    background: url('../../backgrounds/2.svg') no-repeat center center fixed
+    background-size: cover
+
+    width: 100%
+    min-height: 100vh
+
+    display: flex
+    flex-direction: column
+
+    justify-content: flex-start
+    align-items: center
+
+    .logo
+        position: absolute
+        left: 0
+
+    .phone
+        position: absolute
+        right: 94px
+
+        width: 33vw
+        z-index: 10
+
+    .title
+        font-family: Copperplate
+
+        font-weight: 400
+        font-size: 5vw
+
+        line-height: 93%
+        text-transform: uppercase
+
+        color: #D9D9D9
+        width: 70vw
+
+        text-align: center
+
+        padding-top: 160px
+
+        z-index: 50
+
+    .steps
+        display: flex
+        flex-direction: row
+
+        justify-content: center
+        align-items: center
+
+        flex-wrap: wrap
+        gap: 30px
+
+        margin-top: 40px
+
+        img
+            width: 40vw
+
+@media screen and ( max-width:  1300px)
+    .container
+        min-height: 80vh
+        .logo
+            width: 230px
+
+        .title
+            padding-top: 170px
+
+@media screen and ( max-width:  900px)
+    .container
+        min-height: 100vh
+
+        .title
+            padding-top: 70px
+        .logo
+            display: none
+
+        .steps
+            flex-direction: column
+            margin-top: 20px
+            gap: 10px
+
+            img
+                width: 90vw
+
+@media screen and ( max-width:  470px)
+    .container
+        min-height: 82.5vh

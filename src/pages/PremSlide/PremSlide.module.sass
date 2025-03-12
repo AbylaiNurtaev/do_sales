@@ -1,0 +1,66 @@
+@font-face
+    font-family: "Copperplate"
+    src: url("../../fonts/copperplate_light.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: "ElMessiri"
+    src: url("../../fonts/ElMessiri.ttf") format("opentype")
+    font-weight: normal
+    font-style: normal
+
+.container
+    background: url('../../backgrounds/bg4.svg') no-repeat center center fixed
+    background-size: cover
+
+    width: 100%
+    min-height: 100vh
+
+    display: flex
+    flex-direction: column
+
+    justify-content: flex-start
+    align-items: center
+
+    .logo
+        position: absolute
+        left: 0px
+
+    .line
+        width: 90vw
+
+    .images
+        display: flex
+        flex-direction: row
+
+        justify-content: center
+        align-items: center
+
+        flex-wrap: wrap
+        padding-top: 300px
+        gap: 30px
+
+        img
+            width: 20vw
+
+@media screen and ( max-width:  900px)
+    .container
+        .line
+            display: none
+        .images
+            flex-direction: column
+
+            img
+                width: 80vw
+
+@media screen and ( max-width:  575px)
+    .container
+
+        background-size: cover
+        .logo
+            display: none
+        .images
+            padding-top: 30px
+            padding-bottom: 30px
+            img
+                width: 90vw

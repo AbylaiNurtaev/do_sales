@@ -1,0 +1,103 @@
+@font-face
+    font-family: "Copperplate"
+    src: url("../../fonts/copperplate_light.otf") format("opentype")
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: "ElMessiri"
+    src: url("../../fonts/ElMessiri.ttf") format("opentype")
+    font-weight: normal
+    font-style: normal
+
+.container
+    background: url('../../backgrounds/1.svg') no-repeat center center fixed
+    background-size: cover
+
+    width: 100%
+    min-height: 100vh
+
+    .logo
+        position: absolute
+
+    .phone
+        position: absolute
+        right: 94px
+
+        width: 33vw
+        z-index: 10
+
+        cursor: pointer
+
+    .title
+        font-family: Copperplate
+
+        font-weight: 400
+        font-size: 5vw
+
+        line-height: 93%
+        text-transform: uppercase
+
+        color: #D9D9D9
+        width: 50vw
+
+        padding-top: 280px
+        margin-left: 8vw
+
+        z-index: 50
+
+    .par, span
+        font-family: ElMessiri
+
+        font-weight: 400
+        font-size: 3vw
+        line-height: 104%
+
+        color: #fff
+        margin-left: 8vw
+        text-align: left
+
+        width: 50vw
+        margin-top: 10px
+
+        span
+            font-weight: 600
+            margin-left: 0px
+
+@media screen and ( max-width:  1300px)
+    .container
+        min-height: 80vh
+        .logo
+            width: 230px
+
+        .title
+            padding-top: 170px
+
+@media screen and ( max-width:  900px)
+    .container
+        min-height: 100vh
+
+        .phone
+            width: 90vw
+            right: 0
+
+        .title
+            padding-top: 145vw
+            width: 100vw
+
+            font-size: 6vw
+            text-align: center
+            margin: 0
+
+        .par
+            width: 100vw
+            text-align: center
+            margin: 5px 0 0 0
+
+            font-size: 4vw
+
+        .logo
+            display: none
+
+@media screen and ( max-width:  470px)
+    .container
+        min-height: 85.5vh
