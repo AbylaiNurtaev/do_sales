@@ -4,9 +4,9 @@ import s from "./FirstSlide.module.sass";
 function FirstSlide() {
   return (
     <div className={s.container}>
-      <img src="/images/phone.png" className={s.logo} alt="" />
+      <img src="/images/logo.svg" className={s.logo} alt="" />
       <img
-        src="/images/phone.svg"
+        src="/images/phone.png"
         className={s.phone}
         alt=""
         onClick={() =>
